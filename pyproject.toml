@@ -1,0 +1,20 @@
+[project]
+name = "SR3.09"
+version = "0.0.0"
+dependencies = ["pyqt6>=6.7.1"]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "None"}
+
+[tool.isort]
+profile = "black"
+
+[tool.pdm]
+distribution = false
+
+[dependency-groups]
+dev = [
+    "black>=24.10.0",
+    "isort>=5.13.2",
+    "ruff>=0.8.0",
+]
